@@ -20,6 +20,6 @@ def won?(board)
     if combination.all?{|index|  board[index] == "X"}
       return combination
     elsif combination.all?{|index| board[index] == "O"}
-      
+      return combination
   end
 end
