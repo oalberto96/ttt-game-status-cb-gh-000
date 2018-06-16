@@ -36,4 +36,5 @@ def draw?(board)
     result = true
   else
     result = false
+  end
 end
