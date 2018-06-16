@@ -43,7 +43,7 @@ def over?(board)
   full?(board) || draw?(board) || won?(board)
 end
 
-def winner?(board)
+def winner(board)
   puts(won?(board))
   if won?(board).all?{|space| space == "X"}
     return "X"
