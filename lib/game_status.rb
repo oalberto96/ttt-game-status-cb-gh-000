@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2, 5, 8] #right column
 ]
 
-def won(board)
+def won?(board)
   WIN_COMBINATIONS.each do |combination|
     puts condition.all?{|index|  board[index] == "X"}
   end
