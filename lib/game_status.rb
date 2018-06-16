@@ -45,7 +45,7 @@ end
 
 def winner(board)
   puts(won?(board))
-  if won?(board).all?{|space| space == "X"}
+  if won?(board).all?{|index| board[index] == "X"}
     return "X"
   end
   return "O"
