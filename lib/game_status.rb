@@ -44,10 +44,12 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board).all?{|index| board[index] == "X"}
-    return "X"
-  elsif won?(board).all?{|index| board[index] == "O"}
-    return "O"
+  if over?
+    if won?(board).all?{|index| board[index] == "X"}
+      return "X"
+    elsif won?(board).all?{|index| board[index] == "O"}
+      return "O"
+    end
   end
   return nil
 end
