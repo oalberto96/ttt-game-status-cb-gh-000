@@ -46,7 +46,7 @@ end
 def winner(board)
   if won?(board).all?{|index| board[index] == "X"}
     return "X"
-  elsif won?(board).all?{|index| board[index] == "X"}
+  elsif won?(board).all?{|index| board[index] == "O"}
     return "O"
   end
   return nil
