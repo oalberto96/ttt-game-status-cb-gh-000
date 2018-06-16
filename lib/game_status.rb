@@ -44,6 +44,7 @@ def over?(board)
 end
 
 def winner?(board)
+  puts(won?)
   if won?(board).all?{|space| space == "X"}
     return "X"
   end
