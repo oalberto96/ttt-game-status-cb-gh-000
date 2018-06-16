@@ -25,5 +25,6 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?{|space| space != nil || space != " "}
+  if board.all?{|space| space == nil || space == " "}
+    return false
 end
