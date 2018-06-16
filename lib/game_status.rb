@@ -44,10 +44,9 @@ def over?(board)
 end
 
 def winner(board)
-
   if won?(board).all?{|index| board[index] == "X"}
     return "X"
-  else won?(board).all?{|index| board[index] == "X"}
+  elsif won?(board).all?{|index| board[index] == "X"}
     return "O"
   end
   return nil
