@@ -44,7 +44,8 @@ def over?(board)
 end
 
 def winner(board)
-  puts(won?(board))
+  if draw?(board)
+    return nil
   if won?(board).all?{|index| board[index] == "X"}
     return "X"
   end
